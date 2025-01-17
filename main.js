@@ -30,6 +30,23 @@ while (sum2 <= 100) {
   if (sum2 % 2 === 0) sum1 = sum1 + sum2;
 }
 console.log(sum1);
+console.log("task 4");
+let duo = "Duolingo Green";
+let totalizer = 0;
+let searchChar = "e";
+while (totalizer <= duo.length) {
+  const currentChar = duo.charAt(totalizer);
+  if (searchChar === currentChar) {
+    console.log("Есть такой char");
+  }
+  totalizer++;
+}
+for (let totalizer2 = 0; totalizer2 >= duo.length; totalizer2--) {
+  const currentChar = duo.charAt(totalizer2);
+  if (searchChar === currentChar) {
+    console.log("Есть такой char");
+  } 
+}
 console.log("task 5");
 let word = "Home";
 let count = 0;
@@ -44,10 +61,18 @@ for (let counter = 0; reverse1 >= counter; reverse1--) {
   console.log(word1.charAt(reverse1));
 }
 console.log("task 6");
+let star = ``;
+for (let count1 = 1; count1 <= 6; count1++) {
+  for (let vtoroi = 1; vtoroi <= 10; vtoroi++) {
+    star = star + `*`;
+  }
+  star = star + "\n";
+}
+console.log(star);
 let str = ``;
-let count2 = 0;
+let count2 = 1;
 while (count2 <= 6) {
-  let second = 0;
+  let second = 1;
   while (second <= 10) {
     str = str + "*";
     second++;
@@ -56,3 +81,11 @@ while (count2 <= 6) {
   count2++;
 }
 console.log(str);
+let grid = ``;
+for (let colmn = 1; colmn <= 2; colmn++) {
+  for (let line = 1; line <= 6; line++) {
+    grid = grid + `#`;
+  }
+  grid = grid + "\n";
+}
+console.log(grid);
