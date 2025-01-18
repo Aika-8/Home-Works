@@ -3,7 +3,7 @@ for (let i = 1; i <= 100; i++) {
   console.log(i);
 }
 let a = 0;
-while (a <= 99) {
+while (a < 100) {
   a++;
   console.log(a);
 }
@@ -45,7 +45,7 @@ for (let totalizer2 = 0; totalizer2 >= duo.length; totalizer2--) {
   const currentChar = duo.charAt(totalizer2);
   if (searchChar === currentChar) {
     console.log("Есть такой char");
-  } 
+  }
 }
 console.log("task 5");
 let word = "Home";
@@ -81,11 +81,14 @@ while (count2 <= 6) {
   count2++;
 }
 console.log(str);
-let grid = ``;
-for (let colmn = 1; colmn <= 2; colmn++) {
-  for (let line = 1; line <= 6; line++) {
-    grid = grid + `#`;
-  }
-  grid = grid + "\n";
+console.log("task 7");
+
+for (let grid = "#"; grid.length <= 7; grid = grid + "#") {
+  console.log(grid);
 }
-console.log(grid);
+
+let hash = ``;
+while (hash.length <= 7) {
+  hash = hash + "#"
+  console.log(hash);
+}
