@@ -41,8 +41,9 @@ while (totalizer <= duo.length) {
   }
   totalizer++;
 }
-for (let totalizer2 = 0; totalizer2 >= duo.length; totalizer2--) {
-  const currentChar = duo.charAt(totalizer2);
+let asd = duo.length
+for (let totalizer2 = 0; totalizer2 <= asd; asd--) {
+  const currentChar = duo.charAt(asd);
   if (searchChar === currentChar) {
     console.log("Есть такой char");
   }
