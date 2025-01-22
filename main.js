@@ -12,14 +12,16 @@ let student = {
   },
 };
 function createStudant(firstName, lastName, age, university, faculty, gpa) {
-  student.fullname = firstName + lastName;
-  student.age = age;
-  student.university = university;
-  student.faculty = faculty;
-  student.gpa = gpa;
+  return {
+    fullname: firstName + lastName,
+    age: age,
+    university: university,
+    faculty: faculty,
+    gpa: gpa,
+  };
 }
-createStudant("Kubat ", "Beishenov", 24, "ALATOO", "CS", 87);
-console.log(student);
+let newData = createStudant("Kubat ", "Beishenov", 24, "ALATOO", "CS", 87);
+console.log(newData);
 console.log("task 2");
 function deleteKey(student, age) {
   if ("group" in student) {
@@ -48,7 +50,7 @@ if (user.email !== writeEmail) {
   } else if (user.password === writrePass) {
     calc = +prompt("2+3=?");
     if (calc === sum) {
-      alert(" Верно! Ваша премия = ${user.sum}");
+      alert(`Верно! Ваша премия`);
       user.sum = calc;
     } else if (calc !== sum) {
       alert("Incorrect answer");
