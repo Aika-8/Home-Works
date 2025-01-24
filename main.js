@@ -3,9 +3,9 @@ const student = {
   lang: "KG",
   age: 24,
 };
+let student2 = Object.assign({}, student)
+delete student2.age;
 console.log(student);
-const student2 = student;
-delete student.age;
 console.log(student2);
 const array = [
   1,
@@ -40,9 +40,8 @@ console.log(width);
 console.log("task 3");
 const array2 = [1, 2, 3, "sdf", 4, "sdf", {}, 3, !true, 2, [1, 6, 3], 1];
 // let flat = array2.flat();
-// console.log(flat);
+// console.log(flat); выводит вложеный массив в массив
 let transformations = array2.flat().map((n) => +n || 0);
-console.log(transformations);
 let sum = 0;
 function sumInArr() {
   for (i = 0; i < transformations.length; i++) {
