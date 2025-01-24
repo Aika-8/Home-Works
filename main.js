@@ -50,7 +50,7 @@ if (user.email !== writeEmail) {
   } else if (user.password === writrePass) {
     calc = +prompt("2+3=?");
     if (calc === sum) {
-      alert(`Верно! Ваша премия`);
+      alert(`Верно! Ваша премия  = ${user.sum}`);
       user.sum = calc;
     } else if (calc !== sum) {
       alert("Incorrect answer");
