@@ -17,7 +17,6 @@ const joinNames = users.map((item) => {
   };
 });
 console.log(joinNames);
-
 console.log("task 3");
 const numbers2 = [1, 2, 3, 4, 5, 4, 8, 34, 3, 6];
 const evenNums = numbers2.filter(function (n) {
