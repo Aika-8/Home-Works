@@ -62,6 +62,31 @@ function formatDate(date) {
 }
 const formattedDateString = formatDate(new Date("2022-09-01"));
 console.log(formattedDateString);
+// second var
+function formatDate2(date) {
+  let dd = date.getDate();
+  let mm = date.getMonth();
+  let yy = date.getFullYear();
+  if (dd < 10) dd = "0" + dd;
+  if (mm < 10) mm = "0" + mm;
+  return `${dd}.${mm}.${yy}`
+}
+let result = formatDate2(new Date("2022-11-01"))
+console.log(result);
+
+function formatDate3(date) {
+  let day = date.getDate();
+  let month = date.getMonth() + 1; // добавляем 1 к месяцу
+  let year = date.getFullYear();
+
+  if (day < 10) day = "0" + day;
+  if (month < 10) month = "0" + month;
+
+  return `${day}.${month}.${year}`;
+}
+let result2 = formatDate3(new Date("2022-12-01"));
+console.log(result2);
+
 function formatTime(time) {
   return time.toLocaleTimeString("ru", {
     hour: "numeric",
@@ -71,6 +96,19 @@ function formatTime(time) {
 }
 const formatTimeString = formatTime(new Date("2022-01-01, 10:40"));
 console.log(formatTimeString);
+// second var
+function formatTime2(time) {
+  let hours = time.getHours()
+  let minutes = time.getMinutes();
+  let seconds = time.getSeconds();
+  if (hours < 10) hours = "0" + hours;
+  if (minutes < 10) minutes = "0" + minutes;
+  if (seconds < 10) seconds = "0" + seconds;
+  return `${hours}:${minutes}:${seconds}`
+}
+let res = formatTime2(new Date("2022-11-01, 11:40:04"))
+console.log(res);
+
 const instagramUser = {
   userName: "Uzumaki123",
   email: "user@gmail.com",
@@ -78,7 +116,7 @@ const instagramUser = {
   avatarURL: "https://www.google.com/search?q=cat",
   followers: "1m",
   following: 512,
-  title: "Neer Giv up",
+  title: "Never Giv up",
 };
 // console.log(Object.keys(instagramUser));
 for (const key in instagramUser) {
