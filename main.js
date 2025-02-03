@@ -87,8 +87,7 @@ const post = {
 const { comments: color, hello, ...rest } = post;
 // color бизде comments: ["comment1", "comment2"]
 // hello бизде undefind
-// rest  у нас ошибка
-
+// rest  у нас name, isLoading, id, author, body
 const comments = ["comment3", "comment4", "comment5", "comment1"];
 const [undefind, coment1, ...qwery] = comments;
 // undefind = "comment3"
