@@ -1,4 +1,8 @@
 const h1 = document.querySelector("h1");
+h1.style.fontSize = "40px";
+h1.style.color = "mediumblue";
+h1.style.textTransform = "UpperCase";
+h1.style.fontWeight = "500";
 const article = document.querySelector("article");
 article.style.width = "700px";
 article.style.height = "600px";
@@ -27,14 +31,34 @@ button.style.border = "none";
 button.style.color = "white";
 button.style.textTransform = "UpperCase";
 button.style.fontWeight = "900";
-
 button.addEventListener("click", () => {
-  const inpValues = inp.Value.trim("");
+  const inpValues = inp.value.trim("");
   const pTag = document.createElement("p");
+  const btn = document.createElement("button");
+  btn.style.width = "60px";
+  btn.style.height = "30px";
+  btn.style.border = "none";
+  btn.style.color = "white";
+  btn.style.borderRadius = "50px";
+  btn.textContent = "delete";
+  btn.style.textTransform = "UpperCase";
+  btn.style.fontSize = "10px";
+  btn.style.fontWeight = "800";
+  btn.style.backgroundColor = "rgb(255, 20, 110)";
   pTag.style.width = "500px";
   pTag.style.height = " 50px";
+  pTag.style.color = "white";
+  pTag.style.fontWeight = "700";
+  pTag.style.display = "flex";
+  pTag.style.justifyContent = "space-between";
+  pTag.style.alignItems = "center";
   pTag.style.backgroundColor = "deepskyblue";
+  div.appendChild(pTag);
+  pTag.appendChild(btn);
   pTag.textContent = inpValues;
-  inp.Value = "";
-  document.body.appendChild(pTag);
+  inp.value = "";
+  document.body.appendChild(pTag.append(btn));
+  btn.addEventListener("click", () => {
+    pTag.remove();
+  });
 });
