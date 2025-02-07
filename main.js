@@ -1,3 +1,4 @@
+const h1 = document.querySelector("h1");
 const article = document.querySelector("article");
 article.style.width = "700px";
 article.style.height = "600px";
@@ -5,7 +6,7 @@ article.style.backgroundColor = "deepskyblue";
 article.style.display = "flex";
 article.style.justifyContent = "center";
 article.style.alignItems = "center";
-const div = document.querySelector("div");
+const div = document.getElementById("firstDiv");
 div.style.width = "650px";
 div.style.height = "550px";
 div.style.backgroundColor = "white";
@@ -25,4 +26,15 @@ button.style.borderRadius = "25px";
 button.style.border = "none";
 button.style.color = "white";
 button.style.textTransform = "UpperCase";
-button.style.fontWeight = "bold";
+button.style.fontWeight = "900";
+
+button.addEventListener("click", () => {
+  const inpValues = inp.Value.trim("");
+  const pTag = document.createElement("p");
+  pTag.style.width = "500px";
+  pTag.style.height = " 50px";
+  pTag.style.backgroundColor = "deepskyblue";
+  pTag.textContent = inpValues;
+  inp.Value = "";
+  document.body.appendChild(pTag);
+});
