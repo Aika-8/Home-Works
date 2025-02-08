@@ -53,12 +53,12 @@ button.addEventListener("click", () => {
   pTag.style.justifyContent = "space-between";
   pTag.style.alignItems = "center";
   pTag.style.backgroundColor = "deepskyblue";
+  btn.addEventListener("click", () => {
+    div.removeChild(pTag);
+  });
   div.appendChild(pTag);
   pTag.appendChild(btn);
   pTag.textContent = inpValues;
   inp.value = "";
   document.body.appendChild(pTag.append(btn));
-  btn.addEventListener("click", () => {
-    pTag.remove();
-  });
 });
