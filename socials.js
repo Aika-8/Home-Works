@@ -55,7 +55,7 @@ socials.forEach((item) => {
   button.textContent = "Read more";
   button.style.textTransform = "UpperCase";
   button.src = link;
-//   const links = createElement("a")
+  //   const links = createElement("a")
   div1.append(iconimg, h1, p1, button);
   body.appendChild(div1);
 });
