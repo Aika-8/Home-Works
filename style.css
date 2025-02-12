@@ -18,18 +18,19 @@ article {
   justify-content: center;
   align-items: center;
   width: 700px;
-  height: 600px;
+  height: auto;
   background-color: deepskyblue;
 }
 #firstDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   width: 650px;
-  height: 550px;
+  height: auto;
   background-color: white;
   border-radius: 15px;
+  margin: 20px 20px;
 }
 #addBtn {
   width: 70px;
@@ -58,6 +59,9 @@ article {
   padding-right: 15px;
   padding-left: 15px;
 }
+.pTag:last-child{
+  margin-bottom: 50px;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -82,6 +86,9 @@ input[type="checkbox"] {
 }
 #modalWindow {
   display: none;
+  position: fixed;
+  z-index: 1;
+  top: 30%;
 }
 #wrapper {
   display: flex;

@@ -1,32 +1,33 @@
 const div = document.getElementById("firstDiv");
 const inputText = document.getElementById("textInp");
 const button = document.getElementById("addBtn");
-const pTag = document.createElement("p");
-pTag.className = "pTag";
-const checkbox = document.querySelector("input[type='checkbox']");
-const btn = document.createElement("button");
-btn.className = "deleting";
-btn.textContent = "delete";
+const checkBox = document.querySelector("input[type='checkbox']");
 button.addEventListener("click", () => {
   if (inputText.value === "") {
     alert("Can't be empty!");
   } else {
+    checkBox.style.display = "block";
+    const btn = document.createElement("button");
+    btn.className = "deleting";
+    btn.textContent = "delete";
     const inputValues = inputText.value.trim();
+    const pTag = document.createElement("p");
+    pTag.className = "pTag";
     pTag.textContent = inputValues;
     const container = document.createElement("div");
     container.className = "container";
-    checkbox.style.display = "block";
-    container.append(checkbox, btn);
+    container.append(checkBox, btn);
     pTag.append(container);
     div.append(pTag);
+    inputText.value = "";
     window.addEventListener("offline", () => {
-      localStorage.setItem("texts", pTag);
+      localStorage.setItem("texts", inputValues);
     });
     window.addEventListener("online", () => {
       localStorage.clear();
     });
-    checkbox.addEventListener("change", () => {
-      if (checkbox.checked) {
+    checkBox.addEventListener("change", () => {
+      if (checkBox.checked) {
         pTag.style.textDecoration = "line-through";
         pTag.style.textDecorationColor = "red";
       } else {
@@ -39,13 +40,12 @@ button.addEventListener("click", () => {
       const yes = document.getElementById("yes");
       const cancel = document.getElementById("cancel");
       yes.addEventListener("click", () => {
-        div.removeChild(pTag);
+        pTag.remove();
         modalWindow.style.display = "none";
       });
       cancel.addEventListener("click", () => {
         modalWindow.style.display = "none";
       });
     });
-    inputText.value = "";
   }
 });
