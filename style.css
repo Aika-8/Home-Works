@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size: 40px;
+  color: mediumblue;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 600px;
+  background-color: deepskyblue;
+}
+#firstDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 650px;
+  height: 550px;
+  background-color: white;
+  border-radius: 15px;
+}
+#addBtn {
+  width: 70px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  background-image: linear-gradient(200turn, rgb(255, 47, 0), deeppink);
+}
+#textInp {
+  width: 400px;
+  height: 40px;
+  border: 2px solid mediumblue;
+}
+.pTag {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  background-color: deepskyblue;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+.deleting {
+  width: 60px;
+  height: 30px;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 800;
+  background-color: rgb(255, 20, 110);
+}
+#modalWindow {
+  display: none;
+}
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+  height: 200px;
+  border: 2px solid mediumblue;
+  border-radius: 20px;
+  background-color: white;
+  color: mediumblue;
+  p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0px 20px 0px 20px;
+  }
+}
+#askBtn {
+  display: flex;
+  gap: 15px;
+}
+#yes {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(51, 173, 51);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+#cancel {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
