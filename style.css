@@ -47,7 +47,7 @@ article {
   height: 40px;
   border: 2px solid mediumblue;
 }
-.pTag {
+li {
   width: 500px;
   height: 50px;
   display: flex;
@@ -58,8 +58,9 @@ article {
   background-color: deepskyblue;
   padding-right: 15px;
   padding-left: 15px;
+  margin-bottom: 10px;
 }
-.pTag:last-child{
+.li:last-child {
   margin-bottom: 50px;
 }
 .container {
@@ -71,7 +72,6 @@ article {
 input[type="checkbox"] {
   width: 20px;
   height: 20px;
-  display: none;
 }
 .deleting {
   width: 60px;
