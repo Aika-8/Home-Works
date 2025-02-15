@@ -7,6 +7,25 @@
     <title>Home-Works</title>
   </head>
   <body>
+    <article>
+      <h1>Hello world!</h1>
+      <div id="color_div"></div>
+      <div>
+        <div>
+          <p>Minutes</p>
+          <input type="number" id="minutes" min="0" />
+        </div>
+        <div>
+          <p>Seconds</p>
+          <input type="number" id="seconds" max="59" min="0" />
+        </div>
+      </div>
+      <div>
+        <button onclick="restartTimer()">Restart</button>
+        <h2 id="display">00:00</h2>
+        <button onclick="toggleTimer()" id="startPauseButton">Start</button>
+      </div>
+    </article>
     <script src="./main.js"></script>
   </body>
 </html>
