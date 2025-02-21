@@ -51,8 +51,8 @@ li {
   width: 500px;
   height: 50px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   color: white;
   font-weight: 700;
   background-color: deepskyblue;
@@ -63,9 +63,14 @@ li {
 .li:last-child {
   margin-bottom: 50px;
 }
-.container {
+.container_texts {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.container_check-btn {
+  display: flex;
   align-items: center;
   gap: 10px;
 }
