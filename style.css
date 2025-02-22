@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: rgb(242, 239, 239);
+}
+#heading {
+    display: none;
+    width: 100%;
+    padding: 2% 4% 0% 4%;
+    button {
+        width: 160px;
+        height: 30px;
+        background-color: blueviolet;
+        color: white;
+        font-weight: 500;
+        border: none;
+        border-radius: 8px;
+    }
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background-color: rgb(228, 199, 255);
+}
+.avatar {
+  position: absolute;
+  z-index: 2;
+  top: 25%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+}
+.container2 {
+  position: absolute;
+  top: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+span {
+  color: rgb(149, 149, 149) !important;
+}
+.meatBalls {
+  position: absolute;
+  top: 93%;
+  left: 90%;
+  width: 20px;
+  height: 20px;
+}
+.container-recipes {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 330px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.photo-recipes {
+  position: absolute;
+  top: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+.title {
+  position: absolute;
+  top: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    font-size: 20px;
+  }
+}
